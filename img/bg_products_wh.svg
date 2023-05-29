@@ -1,0 +1,13 @@
+<svg id="bg_products_wh" data-name="bg_products_wh" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 218.893" width="1440" height="218.893">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-1" d="M544.984,0c277.6,0,546.033,172.208,793.26,208.335,38.387,5.61,71.949,9.012,101.756,10.558V0Z"/>
+    <path class="cls-1" d="M0,156.647C186.7,79.613,323.065,0,544.984,0H0Z"/>
+  </g>
+</svg>

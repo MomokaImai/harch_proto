@@ -1,0 +1,245 @@
+/* 北海道 */
+
+.click_hokkaido {
+    color:#ffffff;
+    /* background-color: #4169e1; */
+    padding:15px;
+    border-radius: 10px;
+}
+
+.hokkaido input {
+    display: none;
+}
+
+.hokkaido .dsp {
+    padding: 0px 10px 0px 10px;
+    height: 0;
+    overflow: hidden;
+    transition: 0.9s;
+    opacity: 0;
+}
+
+.hokkaido input:checked ~ .dsp {
+    padding: 0px 25px 0px 25px;
+    height: auto;
+    opacity: 1;
+}
+
+
+/* 東北 */
+
+.click_tohoku {
+    color:#ffffff;
+    /* background-color: #4169e1; */
+    padding:15px;
+    border-radius: 10px;
+}
+    
+.tohoku input {
+    display: none;
+}
+    
+.tohoku .dsp {
+    padding: 0px 10px 0px 10px;
+    height: 0;
+    overflow: hidden;
+    transition: 0.9s;
+    opacity: 0;
+}
+    
+.tohoku input:checked ~ .dsp {
+    padding: 0px 25px 0px 25px;
+    height: auto;
+    opacity: 1;
+}
+
+
+/* 関東 */
+
+.click_kanto {
+    color:#ffffff;
+    /* background-color: #4169e1; */
+    padding:15px;
+    border-radius: 10px;
+}
+    
+.kanto input {
+    display: none;
+}
+    
+.kanto .dsp {
+    padding: 0px 10px 0px 10px;
+    height: 0;
+    overflow: hidden;
+    transition: 0.9s;
+    opacity: 0;
+}
+    
+.kanto input:checked ~ .dsp {
+    padding: 0px 25px 0px 25px;
+    height: auto;
+    opacity: 1;
+}
+
+/* 中部 */
+
+.click_tyuubu{
+    color:#ffffff;
+    /* background-color: #4169e1; */
+    padding:15px;
+    border-radius: 10px;
+}
+    
+.tyuubu input {
+    display: none;
+}
+    
+.tyuubu .dsp {
+    padding: 0px 10px 0px 10px;
+    height: 0;
+    overflow: hidden;
+    transition: 0.9s;
+    opacity: 0;
+}
+    
+.tyuubu input:checked ~ .dsp {
+    padding: 0px 25px 0px 25px;
+    height: auto;
+    opacity: 1;
+}
+
+/* 近畿 */
+
+.click_kinki{
+    color:#ffffff;
+    /* background-color: #4169e1; */
+    padding:15px;
+    border-radius: 10px;
+}
+    
+.kinki input {
+    display: none;
+}
+    
+.kinki .dsp {
+    padding: 0px 10px 0px 10px;
+    height: 0;
+    overflow: hidden;
+    transition: 0.9s;
+    opacity: 0;
+}
+    
+.kinki input:checked ~ .dsp {
+    padding: 0px 25px 0px 25px;
+    height: auto;
+    opacity: 1;
+}
+
+/* 中国 */
+
+.click_tyugoku{
+    color:#ffffff;
+    /* background-color: #4169e1; */
+    padding:15px;
+    border-radius: 10px;
+}
+    
+.tyugoku input {
+    display: none;
+}
+    
+.tyugoku .dsp {
+    padding: 0px 10px 0px 10px;
+    height: 0;
+    overflow: hidden;
+    transition: 0.9s;
+    opacity: 0;
+}
+    
+.tyugoku input:checked ~ .dsp {
+    padding: 0px 25px 0px 25px;
+    height: auto;
+    opacity: 1;
+}
+
+/* 四国 */
+
+.click_sikoku{
+    color:#ffffff;
+    /* background-color: #4169e1; */
+    padding:15px;
+    border-radius: 10px;
+}
+    
+.sikoku input {
+    display: none;
+}
+    
+.sikoku .dsp {
+    padding: 0px 10px 0px 10px;
+    height: 0;
+    overflow: hidden;
+    transition: 0.9s;
+    opacity: 0;
+}
+    
+.sikoku input:checked ~ .dsp {
+    padding: 0px 25px 0px 25px;
+    height: auto;
+    opacity: 1;
+}
+
+/* 九州 */
+
+.click_kyusyu{
+    color:#ffffff;
+    /* background-color: #4169e1; */
+    padding:15px;
+    border-radius: 10px;
+}
+    
+.kyusyu input {
+    display: none;
+}
+    
+.kyusyu .dsp {
+    padding: 0px 10px 0px 10px;
+    height: 0;
+    overflow: hidden;
+    transition: 0.9s;
+    opacity: 0;
+}
+    
+.kyusyu input:checked ~ .dsp {
+    padding: 0px 25px 0px 25px;
+    height: auto;
+    opacity: 1;
+}
+
+
+/* 沖縄 */
+
+.click_okinawa{
+    color:#ffffff;
+    /* background-color: #4169e1; */
+    padding:15px;
+    border-radius: 10px;
+}
+    
+.okinawa input {
+    display: none;
+}
+    
+.okinawa .dsp {
+    padding: 0px 10px 0px 10px;
+    height: 0;
+    overflow: hidden;
+    transition: 0.9s;
+    opacity: 0;
+}
+    
+.okinawa input:checked ~ .dsp {
+    padding: 0px 25px 0px 25px;
+    height: auto;
+    opacity: 1;
+}

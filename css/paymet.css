@@ -1,0 +1,167 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+.wf-mplus1p { font-family: "M PLUS 1p"; }
+* {
+    margin: 0;
+    text-align: center;
+    margin-top: 10px;
+    /* background-color: #FFF7E6; */
+    -webkit-appearance: none; /*--各ブラウザのCSSを解除--*/
+	-moz-appearance: none; /*--各ブラウザのCSSを解除--*/
+	appearance: none; /*--各ブラウザのCSSを解除--*/
+}
+/* PC用 */
+.reserve-body {
+    background-color: #f3f2f2;;
+    display: block;
+    position: absolute;
+    top: 30%; 
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%); /*要素の大きさの半分ずつを戻す*/
+    -webkit-transform: translateY(-50%) translateX(-50%);
+}
+.title {
+    font-weight: bold;
+}
+.text {
+    margin-bottom: 20px;
+}
+.table dl {
+    display:table;
+    border: none;
+    width:99%;
+}  
+.table dt {
+    font-weight:bold;
+    vertical-align:middle;
+    display:table-cell;
+    padding:3px 0;
+    min-height:1.5em;
+    text-align: left;
+    width: 200px;
+} 
+.table dd {
+    display:table-cell;
+    min-height:1.5em;
+    padding:5px 0 10px 5px;
+}
+.mark {
+    background-color: #FBCFC3;
+    border: 2px solid #FBCFC3;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+.reserve-main {
+    z-index: 1;
+    margin: 0 auto;
+    width: 730px;
+    display:inline-block;
+    background-color: #faf6f6 !important;
+    padding: 20px;
+    width: auto !important;
+    border-radius: 8px;
+    border: none !important;
+    margin-bottom: 100px;
+}
+.reserve-main span {
+    text-align: left;
+    display: inline-block;
+    font-weight: 600;
+    background-color: #FBCFC3;
+    border-radius: 5px;
+    padding: 2px 5px;
+    color: #FFF;
+    margin: 0 10px 0 0;
+}
+input {
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 20px;
+    border: 1px solid #E6E6E6;
+    width: 200px;
+    height: 25px;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text; /* マウスポインターが要素の上にいるときに表示されるマウスカーソルの種類 */
+    background-color: field;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+}
+/* ボタンデザイン */
+.reserve-btn {
+    align-self: center;
+    background-color: #FBCFC3;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    /* border-radius: 15px 225px 255px 15px 15px 255px 225px 15px; */
+    border-radius: 10px; 
+    border-style: none;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Neucha, sans-serif;
+    /* font-size: 1rem; */
+    font-size: 18px;
+    line-height: 10px;
+    outline: none;
+    /* padding: .75rem;
+    margin-right: 10px; */
+    padding: 20px 15px;
+    width: 68px;
+    height: 45px;
+    margin-top: 15px;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    /* border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px; */
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.reserve-btn:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.reserve-btn:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+/* スマホ用 */
+@media (max-width: 767px) {
+    .table dd{
+        border-left:none;
+        margin-left:auto;
+        margin-top: 0;
+    }       
+    .table dt{
+        padding-left:5px;
+        text-align:left;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        width: auto;
+    }        
+    .table dl{
+        width:auto;
+    }      
+    .table dt,.table dd,.table dl{
+        display:block;
+    }
+}

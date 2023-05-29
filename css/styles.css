@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+.wf-mplus1p { font-family: "M PLUS 1p"; }
+/*全体*/
+body {
+    background-color: #FFF7E6;
+    display: block;
+    text-align: center;
+    transform-origin: 0 0;
+    font-size: 20px;
+    max-width: 1440px;
+}
+/*トップ画像*/
+.example img {
+    height: 400px;
+    object-fit: cover;
+    width: 100vw;
+}
+.example {
+    position: relative;
+}
+.example p {
+    position: absolute;/*絶対配置*/
+    color: white;/*文字は白に*/
+    text-shadow: 1px 2px 3px #808080;
+    font-weight: bold; /*太字に*/
+    font-size: 2em;/*サイズ2倍*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*イベント画像*/
+.i_img {
+    position: absolute;
+    left: 0;
+    margin-top: -50px;
+    margin-left: 30px;
+}
+.group {
+    text-align: center;
+    width: 350px;
+}
+.group img {
+    width: 350px;
+    height: 304px;
+}
+.text {
+    text-align: left;
+    display: inline-block;
+}
+/* topへ戻る*/
+#js-pagetop {
+    position: fixed;
+    bottom: 10px; /* 画面下端からの距離 */
+    right: 30px; /* 画面右端からの距離 */
+    z-index: 10000; /* 前面に表示 */
+
+    align-self: center;
+    background-color: #fff;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Neucha, sans-serif;
+    font-size: 1rem;
+    line-height: 23px;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+#js-pagetop:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+  
+#js-pagetop:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}

@@ -1,0 +1,460 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+.wf-mplus1p { font-family: "M PLUS 1p"; }
+/*全体*/
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none; /*--各ブラウザのCSSを解除--*/
+	-moz-appearance: none; /*--各ブラウザのCSSを解除--*/
+	appearance: none; /*--各ブラウザのCSSを解除--*/
+}
+body {
+    background-color: #FFF7E6;
+    display: block;
+    text-align: center;
+    transform-origin: 0 0;
+    font-size: 16px;
+    margin: 0;
+}
+main {
+    margin: 0;
+}
+/* パンくずリスト */
+.breadcrumbs {
+    font-size: 24px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    list-style: none;
+}
+
+.breadcrumbs li {
+    display: inline;/*横に並ぶように*/
+    list-style: none;
+    font-weight: bold;/*太字*/
+}
+
+.breadcrumbs li:after {/* ▶を表示*/
+    content: '>';
+    padding: 0 0.2em;
+    color: #888;
+}
+
+.breadcrumbs li:last-child:after {
+    content: '';
+}
+
+.breadcrumbs li a {
+    text-decoration: none;
+    color: #888;
+}
+.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+.text {
+    text-align: left;
+    display: inline-block;
+}
+.table td {
+    margin-left: 20px;
+}
+/*トップ画像*/
+.example img {
+    height: 400px;
+    object-fit: cover;
+    width: 100vw;
+    margin-top: 0;
+}
+.example {
+    position: relative;
+}
+.example p {
+    position: absolute;/*絶対配置*/
+    color: white;/*文字は白に*/
+    text-shadow: 1px 2px 3px #808080;
+    font-weight: bold; /*太字に*/
+    font-size: 2em;/*サイズ2倍*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*イベント情報*/
+/* イベント画像 */
+.i_img {
+    position: absolute;
+    left: 0;
+    margin-top: -50px;
+    margin-left: 30px;
+    width: 400px;
+}
+.event-flex {
+    display: flex;
+    flex-wrap: wrap; /* 折返し指定 */
+    justify-content: center;
+    align-items: center;
+    gap: 0px 130px; 
+    /* justify-content: space-between; */
+}
+.group {
+    text-decoration: none;
+    color: #111;
+}
+.group-content {
+    border: 2px solid white;
+    background-color: white;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-top: 80px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.group-title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.group-img{
+    width: 350px;
+    height: 304px;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+  .group-content:hover{
+    /* opacity: 0.6;
+    transition-duration: 0.3s; */
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    transform: translateY(-10px);
+    transition-duration: 0.5s;
+  }
+.group-btn {
+    align-self: center;
+    background-color: #FBCFC3;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    /* border-radius: 15px 225px 255px 15px 15px 255px 225px 15px; */
+    border-radius: 10px;
+    border-style: none;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #576730;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Neucha, sans-serif;
+    /* font-size: 1rem; */
+    font-size: 18px;
+    line-height: 23px;
+    outline: none;
+    /* padding: .75rem;
+    margin-right: 10px; */
+    padding: 10px 30px;
+    margin: 0;
+    margin-top: 0px;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    /* border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px; */
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.group-btn:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+.group-btn:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+/* 日本地図 */
+.map-back{
+    background-image: url("../img/wave.png");
+    background-color: white;
+    background-size: contain;
+}
+.map {
+    padding-top: 30px;
+    
+}
+.map span {
+    font-size: 40px;
+}
+.map-marker {
+    padding-right: 10px;
+}
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+/* harch使い方 */
+.step-flex {
+    display: flex;
+    flex-wrap: wrap; /* 折返し指定 */
+    justify-content: center;
+    gap: 10px 20px; /* 1.縦列　2.横列の空白 */
+}
+.step-flex h1 {
+    margin-top: 60px;
+}
+.step img {
+    width: 200px;
+    margin-bottom: 10px;
+}
+.step-title-text {
+    width: 800px;
+    text-align: left;
+    display: inline-block; 
+    background-color: rgba(255,255,255,0.5);
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+.step-content {
+    width: 230px;
+    text-align: left;
+    display: inline-block;
+    background-color: rgba(255,255,255,0.5);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+/* 応募フォーム */
+.reserve-main {
+    background-color: #FFF7E6;
+    padding: 20px;
+    width: auto !important;
+    border-radius: 8px;
+    border: none !important;
+    color: #2A3B4C !important;
+}
+.reserve-main hr{
+    color: #FBCFC3;
+}
+.reserve-main dl {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.reserve-main dt {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #454040;
+}
+.reserve-main dd {
+    margin: 0;
+}
+.representative-flex {
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.representative-box1 span {
+    margin-bottom: 30px;
+}
+.representative-box2 {
+    margin-left: 20px;
+}
+.reserve-main span {
+    font-weight: 600;
+    background-color: #FBCFC3;
+    border-radius: 5px;
+    padding: 2px 5px;
+    color: #FFF;
+    margin: 0 10px 0 0;
+}
+select {
+    border: 1px solid #E6E6E6;
+    width: 80px;
+    height: 25px;
+    writing-mode: horizontal-tb !important;
+    display: inline-block;
+    background-color: field;
+    padding: 1px 2px;
+    border-width: 2px;
+    margin-bottom: 20px;
+}
+input {
+    margin-bottom: 20px;
+    border: 1px solid #E6E6E6;
+    width: 200px;
+    height: 25px;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text; /* マウスポインターが要素の上にいるときに表示されるマウスカーソルの種類 */
+    background-color: field;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+}
+.tel-btn {
+    align-self: center;
+    background-color: white;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-radius: 10px; 
+    border: 1px solid #E6E6E6;
+    border-style: none;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #454040;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Neucha, sans-serif;
+    /* font-size: 1rem; */
+    font-size: 16px;
+    line-height: 23px;
+    outline: none;
+    /* padding: .75rem;30
+    margin-right: 10px; */
+    width: 200px;
+    height: 30px;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    /* border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px; */
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.tel-btn:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.tel-btn:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+/* ボタンデザイン */
+.button {
+    align-self: center;
+    background-color: #FBCFC3;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    /* border-radius: 15px 225px 255px 15px 15px 255px 225px 15px; */
+    border-radius: 10px; 
+    border-style: none;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #576730;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Neucha, sans-serif;
+    /* font-size: 1rem; */
+    font-size: 18px;
+    line-height: 23px;
+    outline: none;
+    /* padding: .75rem;
+    margin-right: 10px; */
+    padding: 13px 33px;
+    margin-right: 10px;
+    margin-top: 25px;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    /* border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px; */
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+/* topへ戻る*/
+.arrow_top::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #111;
+    /* content: "\f102"; */
+    font-size: 1.5rem;
+    position: absolute;
+    left: 40%;
+}
+#js-pagetop {
+    position: fixed;
+    bottom: 10px; /* 画面下端からの距離 */
+    right: 30px; /* 画面右端からの距離 */
+    z-index: 10000; /* 前面に表示 */
+
+    align-self: center;
+    background-color: white;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    /* border-radius: 15px 225px 255px 15px 15px 255px 225px 15px; */
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 2％px 25px -18px;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Neucha, sans-serif;
+    font-size: 1rem;
+    line-height: 23px;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    /* border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px; */
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+#js-pagetop:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+  
+#js-pagetop:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+.wf-mplus1p { font-family: "M PLUS 1p"; }
+.filelabel {
+    display: inline-block;     /* インラインブロック化 */
+}
+.filelabel img {
+    vertical-align: bottom;    /* 画像の垂直方向の配置 */
+    width: 160px;
+    border-radius: 100%;
+}
+.filelabel:hover {
+    cursor: pointer;           /* マウス形状(ポインタ) */
+}
+#filesend {
+    display: none;  /* 本来のファイル選択フォームは非表示に */
+}

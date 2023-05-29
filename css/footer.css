@@ -1,0 +1,48 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+.wf-mplus1p { font-family: "M PLUS 1p"; }
+/*全体*/
+* {
+    margin: 0;
+    padding: 0;
+}
+.bg-img {
+    /* background-image: url(../img/24752410_s.jpg); */
+    background-color: #6D5448;
+}
+footer {
+    background-color: #FFF7E6;
+    display: block;
+    text-align: center;
+    transform-origin: 0 0;
+    font-size: 16px;
+    margin: 0;
+}
+.footer-img {
+    width: 600px
+}
+.footer-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 13px;
+}
+.footer-box li {
+    text-decoration: none;
+    list-style: none;
+}
+.footer-box a {
+    text-decoration: none;
+    color: white;
+}
+.copyright {
+    margin: 0;
+    color: white;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    background-color: #4f3924;
+}
